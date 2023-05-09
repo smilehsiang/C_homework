@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D4DD0973-4154-46C7-B910-C5716341B1EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>homework1_console</RootNamespace>
+    <AssemblyName>homework1_console</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_clock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_clock.Designer.cs">
+      <DependentUpon>Frm_clock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_clock_pic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_clock_pic.Designer.cs">
+      <DependentUpon>Frm_clock_pic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_guessNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_guessNumber.Designer.cs">
+      <DependentUpon>Frm_guessNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_homePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_homePage.Designer.cs">
+      <DependentUpon>Frm_homePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_note.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_note.Designer.cs">
+      <DependentUpon>Frm_note.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_studentGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_studentGrade.Designer.cs">
+      <DependentUpon>Frm_studentGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_小畫家.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_小畫家.Designer.cs">
+      <DependentUpon>Frm_小畫家.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_structForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_structForm.Designer.cs">
+      <DependentUpon>Frm_structForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_screenSaver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_screenSaver.Designer.cs">
+      <DependentUpon>Frm_screenSaver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility.cs" />
+    <Compile Include="Frm_drinkpos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_drinkpos.Designer.cs">
+      <DependentUpon>Frm_drinkpos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_loan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_loan.Designer.cs">
+      <DependentUpon>Frm_loan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_loanReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_loanReport.Designer.cs">
+      <DependentUpon>Frm_loanReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_mycalc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_mycalc.Designer.cs">
+      <DependentUpon>Frm_mycalc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_sayhello.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_sayhello.Designer.cs">
+      <DependentUpon>Frm_sayhello.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_clock.resx">
+      <DependentUpon>Frm_clock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_clock_pic.resx">
+      <DependentUpon>Frm_clock_pic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_guessNumber.resx">
+      <DependentUpon>Frm_guessNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_drinkpos.resx">
+      <DependentUpon>Frm_drinkpos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_homePage.resx">
+      <DependentUpon>Frm_homePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_loan.resx">
+      <DependentUpon>Frm_loan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_loanReport.resx">
+      <DependentUpon>Frm_loanReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_mycalc.resx">
+      <DependentUpon>Frm_mycalc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_note.resx">
+      <DependentUpon>Frm_note.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_studentGrade.resx">
+      <DependentUpon>Frm_studentGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_小畫家.resx">
+      <DependentUpon>Frm_小畫家.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_sayhello.resx">
+      <DependentUpon>Frm_sayhello.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_structForm.resx">
+      <DependentUpon>Frm_structForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_screenSaver.resx">
+      <DependentUpon>Frm_screenSaver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miffylabel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miffy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miffyoutline.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miffyshow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miffylabel1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miffylab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miffywallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miffywall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miffylabela.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miffybigface.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
